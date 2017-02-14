@@ -1,0 +1,43 @@
+/*Components
+*Examples _buttons, _dropdown, _cover, _navagation, _carousel
+*
+*/
+@import "components/_buttons";
+@import "components/_media";
+@import "components/_navagation";
+
+
+/*Layouts
+*Examples _grid, _header, _footer, _sections
+*
+*/
+@import "layouts/_header";
+@import "layouts/_grid";
+@import "layouts/_about";
+@import "layouts/_skills";
+@import "layouts/_projects";
+@import "layouts/_contact";
+@import "layouts/_footer";
+
+
+/*Modules
+*Examples _variables, _mixins, _functions
+*
+*/
+@import "modules/_variables";
+@import "modules/_mixins";
+@import "modules/_functions";
+
+
+/*Pages
+*Examples self explanatory
+*
+*/
+@import "pages/_index";
+
+
+/*Vendors
+*Third party code like jquery-ui or bootstrap
+*
+*/
+@import "vendors/_normalize";
