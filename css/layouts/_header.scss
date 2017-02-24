@@ -1,0 +1,130 @@
+@import "../modules/_variables";
+#intro {
+  //Main intro section
+  box-sizing: border-box;
+
+
+  //Page indicator top left
+  #page-indicator {
+    position: fixed;
+    top: 50px;
+    left: -$half-pad;
+    width: 220px;
+    max-height: 65px;
+    font-size: $h2-size;
+    text-align: center;
+    border: $border-size solid $main-color;
+
+    h2 {
+      margin: 0;
+      line-height: 65px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 75px;
+      background: $main-color;
+      position: absolute;
+      top: -$border-size;
+      right: -$border-size * 3;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+
+  //Center content - Face, Title, Blurb
+  .main-block {
+    position: relative;
+    margin: 100px auto 0 auto;
+    width: 800px;
+    max-height: 300px;
+    border: $border-size solid $main-color;
+    border-radius: $border-radius;
+    box-shadow: 0 10px 10px -20px #000;
+
+    .section-header {
+      position: absolute;
+      bottom: -65px;
+      right: 0;
+      font-size: $h1-size + 1;
+      text-align: right;
+
+      h3 {
+        position: relative;
+        margin: 0;
+      }
+
+      h3:last-of-type {
+        right: $one-mar;
+      }
+    }
+
+    .blurb {
+      position: absolute;
+      bottom: -100px;
+      left: 20px;
+      padding: $half-pad;
+      width: 400px;
+      background: white;
+      border: $border-size solid $main-color;
+      border-radius: $border-radius;
+    }
+  }
+
+  //Right Side Navagation
+  #navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+
+    .nav-icon {
+      position: absolute;
+      top: 0;
+      right:0;
+      margin: 50px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+
+
+      span {
+        display: block;
+        content: "";
+        background: #000;
+        width: 100%;
+        height: 5px;
+        margin-bottom: 10px;
+        border-radius: $border-radius;
+      }
+    }
+
+    .main-nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      height: 100%;
+
+      .main-nav-ul {
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin: 0 0 $one-mar 0;
+
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
