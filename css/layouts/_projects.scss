@@ -1,0 +1,100 @@
+@import "../modules/_variables";
+
+#projects {
+  margin: 50px auto;
+  padding: 200px 0 0 0;
+  width: 70%;
+
+  .section-header {
+    margin: 50px auto;
+    font-size: $h1-size + 1;
+    text-align: left;
+    color: $header-color;
+    text-shadow: $header-text-shadow;
+  }
+
+  .word-bg {
+    padding: $quarter-pad;
+    background: $font-bg;
+    text-shadow: $font-text-shadow;
+  }
+
+  .underline {
+    border-bottom: 5px solid $main-color;
+    box-shadow: $underline-shadow;
+  }
+
+  .columnOne {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    float: left;
+
+    img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      border-radius: $border-radius;
+    }
+
+
+    #BigBox {
+      margin: 10px 0 0 0;
+      width: 100%;
+      height: 250px;
+      background: $second-color;
+      border: $border-size solid $main-color;
+      border-radius: $border-radius;
+      overflow: hidden;
+
+      &:hover img {
+        transition: 200ms all ease-in-out;
+        transform: scale(1.1) rotate(-5deg);
+        filter: opacity(.3);
+      }
+    }
+
+    #MediumBox {
+      margin: 10px 0 0 0;
+      width: 100%;
+      height: 200px;
+      background: $second-color;
+      border: $border-size solid $font-bg;
+      border-radius: $border-radius;
+      overflow: hidden;
+
+      &:hover img {
+        transition: 200ms all ease-in-out;
+        transform: scale(1.1) rotate(-5deg);
+        filter: opacity(.3);
+      }
+    }
+
+    #SmallBox {
+      margin: 10px 0 0 0;
+      width: 100%;
+      height: 150px;
+      background: $second-color;
+      border: $border-size solid $third-color;
+      border-radius: $border-radius;
+      overflow: hidden;
+
+      &:hover img {
+        transition: 200ms all ease-in-out;
+        transform: scale(1.1) rotate(-5deg);
+        filter: opacity(.3);
+      }
+    }
+
+    #SmallBox:hover, #MediumBox:hover, #BigBox:hover {
+      transition: 200ms all ease-in;
+      transform: translateY(-10px);
+    }
+  }
+
+  #clear {
+    content: "";
+    clear: both;
+  }
+}

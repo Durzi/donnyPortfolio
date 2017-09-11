@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.min.css">
   <title>Donny McKercher</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/toggleNavagation.js"></script>
 </head>
 <body>
 
@@ -13,12 +16,15 @@
   <section id="intro">
 
     <div id="page-indicator">
-      <h2>Intro</h2>
+      <h2>//Intro //About //Skills //Projects //Contact</h2>
     </div>
+
 
     <div class="main-block">
 
-      <img src="img/testingTed.jpg" alt="My FACE!" id="profile-picture">
+      <div id="profile-picture">
+        <img src="img/myCircleFace1.jpg" alt="My FACE!">
+      </div>
 
       <div class="section-header">
         <h3>Donny</h3>
@@ -27,14 +33,13 @@
 
 
       <article class="blurb">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h3 class="h3-about">Who is this guy?</h3>
+        <p>My name is Donald McKercher, but everyone just calls me Donny. If you've found this page you've probably guessed that I'm a Web Developer and if you want to learn a little more about me please continue.</p>
       </article>
-
     </div>
 
     <div id="navigation">
-
-      <div class="nav-icon">
+      <div id="nav-icon">
         <span></span>
         <span></span>
         <span></span>
@@ -48,9 +53,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-
     </div>
-
   </section><!-- End of Intro -->
 
 
@@ -58,19 +61,24 @@
 
   <!-- About Section -->
   <section id="about">
-    <h3 class="h3-about">Who am I?</h3>
-    <p>My name is Donald McKercher, but everyone just calls me Donny. If you've found this page you've probably guessed that I'm a Web Developer and want to learn a little more about me.</p>
 
-    <h3 class="h3-about">What Kind of work do I do?</h3>
-    <p>I mostly work with Front-end development such as: HTML5, CSS3(SASS/SCSS), JavaScript, and JQuery. I do some Back-end development previously I worked with PHP and MySQL, but I've been learning Node.js, Express.js, and MongoDB and I'm really enjoying it!</p>
+    <div class="section-header">
+      <h3>A few <span id="bytes"><span class="underline">Bytes</span></span> about</h3>
+      <h3>Myself</h3>
+    </div>
 
-    <p>On the design side I do some wireframing with Sketch 3</p>
+    <div id="about-block">
+      <h3 class="h3-about">What Kind of work do I do?</h3>
+      <p>I mostly work with Front-end development such as: HTML5, CSS3(SASS/SCSS), JavaScript, and JQuery. I do some Back-end development previously I worked with PHP and MySQL, but I've been learning Node.js, Express.js, and MongoDB and I'm really enjoying it!</p>
 
-    <h3 class="h3-about">How I do my work</h3>
-    <p>Well it all starts with the planning process. First I need to assess the bare essentials for the project. Like the purpose of the project, who's the target audiance, what fuctionality the site needs, and what tools are needed for the project. From there I can develop the attack plans! I then move onto the design to determine what I'm working with. I'll wireframe something together with Sketch, get some feedback maybe make some revisions and move on. Now I can start doing some coding. After reciving some final feedback make some more revisions per the customers requests.</p>
+      <p>On the design side I do some wireframing with Sketch 3</p>
 
-    <h3 class="h3-about">Where do I want my career to go?</h3>
-    <p>I really enjoy writing Node. I'd like to get into writing apps with Node and JavaScript</p>
+      <h3 class="h3-about">How I do my work</h3>
+      <p>Well it all starts with the planning process. First I need to assess the bare essentials for the project. Like the purpose of the project, who's the target audiance, what fuctionality the site needs, and what tools are needed for the project. From there I can develop the attack plans! I then move onto the design to determine what I'm working with. I'll wireframe something together with Sketch, get some feedback maybe make some revisions and move on. Now I can start doing some coding. After reciving some final feedback make some more revisions per the customers requests.</p>
+
+      <h3 class="h3-about">Where do I want my career to go?</h3>
+      <p>I really enjoy writing Node. I'd like to get into writing apps with Node and JavaScript</p>
+    </div>
   </section><!-- End of About -->
 
 
@@ -78,19 +86,42 @@
 
   <!-- Skills Section -->
   <section id="skills">
-    <h3 class="h3-skills">HTML 5</h3>
 
-    <h3 class="h3-skills">CSS 3</h3>
+    <div class="section-header">
+      <h3>My <span class="word-bg"><span class="underline">Greatest</span></span> Tools</h3>
+    </div>
 
-    <h3 class="h3-skills">SASS/SCSS</h3>
+    <div class="skills-block">
+      <img src="img/html.svg" alt="Html Icon">
 
-    <h3 class="h3-sklls">JavaScript</h3>
+      <img src="img/css.svg" alt="Css Icon">
 
-    <h3 class="h3-skills">Sketch 3</h3>
+      <img src="img/SASS.svg" alt="Sass Icon">
 
-    <h3 class="h3-skills">Node</h3>
+      <img src="img/JavaScript.svg" alt="JavaScript Icon">
 
-    <h3 class="h3-skills">Mongo</h3>
+      <img src="img/jquery.svg" alt="JQuery Icon">
+    </div>
+
+
+    <div class="section-header">
+      <h3>Skills in <span class="word-bg"><span class="underline">Development</span></span></h3>
+    </div>
+
+    <div class="skills-block">
+
+      <img src="img/Sketch.svg" alt="Sketch 3 Icon">
+
+      <img src="img/NodeJs.svg" alt="Node Js Icon">
+
+      <img src="img/MongoDb.svg" alt="MongoDb Icon">
+
+      <img src="img/php.svg" alt="MongoDb Icon">
+
+      <img src="img/mysql.svg" alt="MongoDb Icon">
+
+      <img src="img/github.svg" alt="MongoDb Icon">
+    </div>
   </section><!-- End of Skills -->
 
 
@@ -98,10 +129,33 @@
 
   <!-- Project Section -->
   <section id="projects">
-    <h3 class="h3-projects">Projects</h3>
+    <h3 class="section-header">Few <span class="word-bg"><span class="underline">Codepen</span></span> Examples</h3>
 
-    <p>Grid layout of projects 3 different sized boxes</p>
-    <p>For now you could use codepen examples until you get some projects you can add to it.</p>
+    <div class="columnOne">
+      <div id="BigBox"><a href="https://codepen.io/Mckreature/pen/YWbJdb" target="_blank"><img src="img/thumbnails/hex-thumbnail.png" alt="project thumbnail"></a></div>
+
+      <div id="MediumBox"><a href="https://codepen.io/Mckreature/pen/NGGoKO" target="_blank"><img src="img/thumbnails/onclick-animation.png" alt="project thumbnail"></a></div>
+
+      <div id="SmallBox"><a href="https://codepen.io/Mckreature/pen/KrEJOZ" target="_blank"><img src="img/thumbnails/rolling-text.png" alt="project thumbnail"></a></div>
+    </div>
+
+    <div class="columnOne">
+      <div id="MediumBox"><a href="https://codepen.io/Mckreature/pen/vyRrgQ" target="_blank"><img src="img/thumbnails/passwordJenny.png" alt="project thumbnail"></a></div>
+
+      <div id="BigBox"><a href="https://codepen.io/Mckreature/pen/YWbJdb" target="_blank"><img src="img/thumbnails/hex-thumbnail.png" alt="project thumbnail"></a></div>
+
+      <div id="SmallBox"><a href="https://codepen.io/Mckreature/pen/NGGoKO" target="_blank"><img src="img/thumbnails/onclick-animation.png" alt="project thumbnail"></a></div>
+    </div>
+
+    <div class="columnOne">
+      <div id="SmallBox"><a href="https://codepen.io/Mckreature/pen/KrEJOZ" target="_blank"><img src="img/thumbnails/rolling-text.png" alt="project thumbnail"></a></div>
+
+      <div id="MediumBox"><a href="https://codepen.io/Mckreature/pen/vyRrgQ" target="_blank"><img src="img/thumbnails/passwordJenny.png" alt="project thumbnail"></a></div>
+
+      <div id="BigBox"><a href="https://codepen.io/Mckreature/pen/NGGoKO" target="_blank"><img src="img/thumbnails/onclick-animation.png" alt="project thumbnail"></a></div>
+    </div>
+
+    <div id="clear"></div>
   </section><!-- End of Projects -->
 
 

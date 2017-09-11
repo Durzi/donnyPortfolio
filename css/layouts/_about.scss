@@ -1,0 +1,47 @@
+#about {
+  margin:0;
+  padding: 100px 0 0 0;
+  width: 100%;
+
+  #about-block {
+    margin: auto;
+    padding: $one-pad;
+    width: 800px;
+    background: $section-bg-color;
+    border: $border-size solid $main-color;
+    border-radius: $border-radius;
+    box-shadow: $main-block-shadow;
+  }
+
+  .section-header {
+    margin: 0 0 0 220px;
+    font-size: $h1-size + 1;
+    color: $header-color;
+    text-shadow: $header-text-shadow;
+
+    #bytes {
+      padding: $quarter-pad;
+      background: $font-bg;
+      text-shadow: $font-text-shadow;
+    }
+
+    .underline {
+      border-bottom: 5px solid $main-color;
+      box-shadow: $underline-shadow;
+    }
+
+
+    h3 {
+      margin: 0;
+      transform: rotate(-5deg);
+    }
+  }
+
+  .h3-about {
+    font-size: $h3-size;
+  }
+
+  p {
+    font-size: $p-size;
+  }
+}
