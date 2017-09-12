@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="font-awesome/scss/font-awesome.min.css">
   <title>Donny McKercher</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -39,10 +40,10 @@
     </div>
 
     <div id="navigation">
-      <div id="nav-icon">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="nav-icon">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </div>
 
       <nav class="main-nav">
@@ -128,6 +129,10 @@
 
 
   <!-- Project Section -->
+
+  <!-- FIX PROJECT SECTION HEADER
+    -- Should be in div container inside an H3
+  -->
   <section id="projects">
     <h3 class="section-header">Few <span class="word-bg"><span class="underline">Codepen</span></span> Examples</h3>
 
@@ -163,24 +168,18 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <nav class="contact-nav-social">
-      <ul class="contact-nav-ul">
-        <li><a href="#facebook">Facebook Icon</a></li>
-        <li><a href="#linkedin">Linkedin Icon</a></li>
-        <li><a href="#github">Github Icon</a></li>
-        <li><a href="#codepen">Codepen Icon</a></li>
-      </ul>
-    </nav>
 
-    <form action="to-be-determined" method="POST" id="contact-email">
-      <label for="user-name"></label>
-      <input type="text" name="user-name" id="contact-email-name" placeholder="Your name">
-      <label for="user-email"></label>
-      <input type="text" name="user-email" id="contact-email-email" placeholder="Your email">
-      <label for="user-msg"></label>
-      <textarea name="user-msg" id="contact-email-msg" cols="30" rows="10"></textarea>
-      <input type="submit" id="contact-email-submit">
-    </form>
+    <div class="section-header">
+      <h3> How you can <span class="word-bg"><span class="underline">Contact</span></span> me</h3>
+    </div>
+
+
+    <nav class="contact-nav-social">
+        <div class="social-circle"><a href="https://www.facebook.com/profile.php?id=100015371407426" target="_blank"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a></div>
+        <div class="social-circle"><a href="https://www.linkedin.com/in/donnymckercher/" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a></div>
+        <div class="social-circle"><a href="https://github.com/Durzi" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a></div>
+        <div class="social-circle"><a href="https://codepen.io/Mckreature/" target="_blank"><i class="fa fa-codepen fa-4x" aria-hidden="true"></i></a></div>
+    </nav>
   </section><!-- End of Contact -->
 
 
@@ -189,8 +188,6 @@
   <!-- Footer Section -->
   <footer id="footer">
     <p>Copyright by Donny McKercher 2017</p>
-
-    <button id="footer-resume">Resume PDF</button>
   </footer><!-- End of Footer -->
 
 </body>

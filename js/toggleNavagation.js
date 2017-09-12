@@ -1,7 +1,10 @@
 
 $(function() {
-  $("#nav-icon").click(function() {
+  $(".nav-icon").click(function() {
     $(".main-nav").toggleClass("open");
+    $(".icon-bar:nth-child(1)").toggleClass("close-nav-icon-1");
+    $(".icon-bar:nth-child(2)").toggleClass("close-nav-icon-2");
+    $(".icon-bar:nth-child(3)").toggleClass("close-nav-icon-3");
   });
 
 
@@ -11,10 +14,10 @@ $(function() {
 
     var aPos = $("#about").offset().top - 125;
     var sPos = $("#skills").offset().top -50;
-    var pPos = $("#projects").offset().top - 100;
-    var cPost = $("#contact").offset().top;
+    var pPos = $("#projects").offset().top + 100;
+    var cPos = $("#contact").offset().top - 200;
 
-    console.log("About: "+aPos+ "Skills: "+sPos+ "Projects: "+pPos);
+    console.log("About: "+aPos+ "Skills: "+sPos+ "Projects: "+pPos+"Contact: "+ cPos);
     console.log(wPos);
 
     if (wPos <= aPos) {
@@ -34,6 +37,10 @@ $(function() {
     }
     if (wPos >= pPos) {
       $("#page-indicator h2").css("top", -195 + "px");
+    }
+
+    if (wPos >= cPos) {
+      $("#page-indicator h2").css("top", -260 + "px");
     }
 
 

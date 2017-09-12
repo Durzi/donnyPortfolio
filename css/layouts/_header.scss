@@ -1,8 +1,7 @@
 @import "../modules/_variables";
 #intro {
   //Main intro section
-  margin: 0;
-  padding: 200px 0 0 0;
+  margin: 150px 0 0 0;
   height: 100vh;
   box-sizing: border-box;
 
@@ -90,7 +89,7 @@
     width: 150px;
     height: 100%;
 
-    #nav-icon {
+    .nav-icon {
       position: absolute;
       top: 0;
       right:0;
@@ -102,7 +101,7 @@
 
 
       &:hover {
-        animation: bounce 500ms linear once;
+        animation: wobble 300ms linear;
       }
 
       &:active {
@@ -110,7 +109,7 @@
       }
 
 
-      span {
+      .icon-bar {
         display: block;
         content: "";
         margin-bottom: $quarter-mar;
@@ -118,6 +117,7 @@
         height: 4px;
         background: $header-color;
         border-radius: $border-radius;
+        transition: 300ms all ease-in;
       }
     }
 
@@ -153,7 +153,7 @@
             text-decoration: none;
             color: #000;
             border-bottom: $border-size solid transparent;
-            transition: border 500ms;
+            transition: border 300ms;
 
           }
         }
@@ -167,13 +167,28 @@
 }
 
 
-@keyframes bounce {
-  0% {transform: scale(.9) translateY(1px);}
-  50% {transform: scale(1.1) translateY(-1px);}
-  100% {transform: scale(1.2);}
+@keyframes wobble {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(10deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-10deg);}
+  100% {transform: rotate(deg);}
 }
 
 .shadow {
   color: $font-bg;
   transform: scale(1.1);
+}
+
+.close-nav-icon-1 {
+  transform: rotate(45deg);
+}
+
+.close-nav-icon-2 {
+  opacity: 0;
+}
+
+.close-nav-icon-3 {
+  margin-top: -1em;
+  transform: rotate(-45deg);
 }

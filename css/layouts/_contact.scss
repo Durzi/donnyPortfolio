@@ -1,0 +1,88 @@
+#contact {
+  margin: 200px auto;
+  width: 70%;
+
+  .section-header {
+    margin: 0;
+    font-size: $h1-size + 1;
+    color: $header-color;
+    text-shadow: $header-text-shadow;
+
+    h3 {
+      text-align: right;
+    }
+
+    .word-bg {
+      padding: $quarter-pad;
+      background: $font-bg;
+      text-shadow: $font-text-shadow;
+    }
+
+    .underline {
+      border-bottom: 5px solid $main-color;
+      box-shadow: $underline-shadow;
+    }
+  }
+
+  .contact-nav-social{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .social-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        transform: scale(.9) translateY(-15px);
+      }
+
+      &:hover i {
+        transform: scale(1.1);
+      }
+
+      a {
+        color: inherit;
+
+        &:hover {
+          animation: wobble 300ms;
+        }
+      }
+
+      a:visited {
+        color:inherit;
+      }
+
+      &:nth-child(1) {
+        background: $facebook;
+      }
+
+      &:nth-child(2) {
+        background: $linkedin;
+      }
+
+      &:nth-child(3) {
+        color: #FFF;
+        background: $github;
+      }
+
+      &:nth-child(4) {
+        background: $codepen;
+      }
+    }
+  }
+}
+
+@keyframes wobble {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(10deg);}
+  50% {transform: rotate(0deg);}
+  75% {transform: rotate(-10deg);}
+  100% {transform: rotate(deg);}
+}
