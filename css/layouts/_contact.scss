@@ -3,30 +3,13 @@
   width: 70%;
 
   .section-header {
-    margin: 0;
-    font-size: $h1-size + 1;
-    color: $header-color;
-    text-shadow: $header-text-shadow;
-
-    h3 {
-      text-align: right;
-    }
-
-    .word-bg {
-      padding: $quarter-pad;
-      background: $font-bg;
-      text-shadow: $font-text-shadow;
-    }
-
-    .underline {
-      border-bottom: 5px solid $main-color;
-      box-shadow: $underline-shadow;
-    }
+    margin-bottom: 45px;
+    text-align: center;
   }
 
   .contact-nav-social{
     margin: auto;
-    width: 100%;
+    width: 700px;
     display: flex;
     justify-content: space-between;
 
@@ -77,12 +60,4 @@
       }
     }
   }
-}
-
-@keyframes wobble {
-  0% {transform: rotate(0deg);}
-  25% {transform: rotate(10deg);}
-  50% {transform: rotate(0deg);}
-  75% {transform: rotate(-10deg);}
-  100% {transform: rotate(deg);}
 }

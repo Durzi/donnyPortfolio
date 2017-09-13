@@ -1,46 +1,24 @@
 #about {
-  margin: 0 0 150px 0;
-  width: 100%;
-
-  #about-block {
-    margin: auto;
-    padding: $one-pad;
-    width: 800px;
-    background: $section-bg-color;
-    border: $border-size solid $main-color;
-    border-radius: $border-radius;
-    box-shadow: $main-block-shadow;
-  }
+  margin: 0 auto 200px auto;
+  width: 70%;
 
   .section-header {
-    margin: 0 0 0 220px;
-    font-size: $h1-size + 1;
-    color: $header-color;
-    text-shadow: $header-text-shadow;
+    margin-left: 45px;
 
-    #bytes {
-      padding: $quarter-pad;
-      background: $font-bg;
-      text-shadow: $font-text-shadow;
-    }
-
-    .underline {
-      border-bottom: 5px solid $main-color;
-      box-shadow: $underline-shadow;
-    }
-
-
-    h3 {
-      margin: 0;
+    h2 {
       transform: rotate(-5deg);
     }
   }
 
-  .h3-about {
-    font-size: $h3-size;
-  }
-
-  p {
-    font-size: $p-size;
+  #about-block {
+    margin: 0 auto 0 220px;
+    padding: $one-pad;
+    width: 700px;
+    font-size: 1.1em;
+    font-family: $paragraph-font;
+    background: $section-bg-color;
+    border: $border-size solid $main-color;
+    border-radius: $border-radius;
+    box-shadow: $main-block-shadow;
   }
 }

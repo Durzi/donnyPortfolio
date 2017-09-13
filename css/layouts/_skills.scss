@@ -1,48 +1,26 @@
 #skills {
-  margin: 0 auto 150px auto;
-  padding: 10px 0;
+  margin: 0 auto 200px auto;
   width: 70%;
 
   .section-header {
-    margin: 50px auto;
-    font-size: $h1-size + 1;
-    text-align: left;
-    color: $header-color;
-    text-shadow: $header-text-shadow;
-
-    h3 {
-      margin: 0;
-    }
-
-    .word-bg {
-      padding: $quarter-pad;
-      background: $font-bg;
-      text-shadow: $font-text-shadow;
-    }
-
-    .underline {
-      border-bottom: 5px solid $main-color;
-      box-shadow: $underline-shadow;
-    }
+    margin-bottom: 45px;
+    text-align: center;
 
     &:nth-child(3) {
-      text-align: center;
+      margin-top: 45px;
     }
   }
 
   .skills-block {
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding: $one-pad;
-    width: 100%;
+    width: 700px;
 
 
     img {
-      margin: 0;
-      max-width: 150px;
-      max-height: 200px;
+      max-width: 100px;
+      max-height: 150px;
       transition: 300ms all ease-in-out;
 
       &:hover {
@@ -51,12 +29,4 @@
       }
     }
   }
-}
-
-@keyframes wobble {
-  0% {transform: rotate(0deg);}
-  25% {transform: rotate(10deg);}
-  50% {transform: rotate(0deg);}
-  75% {transform: rotate(-10deg);}
-  100% {transform: rotate(deg);}
 }

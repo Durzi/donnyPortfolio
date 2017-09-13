@@ -6,6 +6,8 @@
 @import "components/_media";
 @import "components/_navagation";
 @import "components/_images";
+@import "components/_headers";
+@import "components/_keyframes";
 
 body {
   background: url("../img/bg/light-dark-gradient.png");
@@ -19,7 +21,6 @@ body {
 *
 */
 @import "layouts/_header";
-@import "layouts/_grid";
 @import "layouts/_about";
 @import "layouts/_skills";
 @import "layouts/_projects";
@@ -35,12 +36,6 @@ body {
 @import "modules/_mixins";
 @import "modules/_functions";
 
-
-/*Pages
-*Examples self explanatory
-*
-*/
-@import "pages/_index";
 
 
 /*Vendors

@@ -21,10 +21,10 @@ $(function() {
     console.log(wPos);
 
     if (wPos <= aPos) {
-      $("#page-indicator h2").css("top", 0 + "px");
+      $("#page-indicator h1").css("top", 0 + "px");
     }
     if (wPos >= aPos) {
-      $("#page-indicator h2").css("top", -65 + "px");
+      $("#page-indicator h1").css("top", -65 + "px");
       /*$("#page-indicator h2").addClass("shadow");
 
       setTimeout(function() {
@@ -33,14 +33,14 @@ $(function() {
       */
     }
     if (wPos >= sPos) {
-      $("#page-indicator h2").css("top", -130 + "px");
+      $("#page-indicator h1").css("top", -130 + "px");
     }
     if (wPos >= pPos) {
-      $("#page-indicator h2").css("top", -195 + "px");
+      $("#page-indicator h1").css("top", -195 + "px");
     }
 
     if (wPos >= cPos) {
-      $("#page-indicator h2").css("top", -260 + "px");
+      $("#page-indicator h1").css("top", -260 + "px");
     }
 
 

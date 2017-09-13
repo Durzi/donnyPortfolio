@@ -1,35 +1,22 @@
 @import "../modules/_variables";
 
 #projects {
-  margin: 0 auto 150px auto;
-  padding: 10px 0;
-  width: 70%;
+  margin: 0 auto 200px auto;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
   .section-header {
-    margin: 50px auto;
-    font-size: $h1-size + 1;
-    text-align: left;
-    color: $header-color;
-    text-shadow: $header-text-shadow;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 45px;
   }
 
-  .word-bg {
-    padding: $quarter-pad;
-    background: $font-bg;
-    text-shadow: $font-text-shadow;
-  }
 
-  .underline {
-    border-bottom: 5px solid $main-color;
-    box-shadow: $underline-shadow;
-  }
-
-  .columnOne {
+  .projects-block {
     margin: 10px;
-    display: flex;
-    flex-direction: column;
     width: 30%;
-    float: left;
 
     img {
       width: 100%;
@@ -37,8 +24,6 @@
       cursor: pointer;
       border-radius: $border-radius;
     }
-
-
     #BigBox {
       margin: 10px 0 0 0;
       width: 100%;
@@ -91,10 +76,5 @@
       transition: 200ms all ease-in;
       transform: translateY(-10px);
     }
-  }
-
-  #clear {
-    content: "";
-    clear: both;
   }
 }
