@@ -1,5 +1,6 @@
 #about {
   margin: 0 auto 200px auto;
+  padding-top: 25px;
   width: 70%;
 
   .section-header {
@@ -13,12 +14,16 @@
   #about-block {
     margin: 0 auto 0 220px;
     padding: $one-pad;
-    width: 700px;
-    font-size: 1.1em;
+    width: 800px;
+    font-size: 1.15em;
     font-family: $paragraph-font;
     background: $section-bg-color;
     border: $border-size solid $main-color;
     border-radius: $border-radius;
     box-shadow: $main-block-shadow;
+
+    p {
+      margin-left: 20px;
+    }
   }
 }

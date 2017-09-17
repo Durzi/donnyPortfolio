@@ -1,5 +1,6 @@
 #skills {
   margin: 0 auto 200px auto;
+  padding-top: 50px;
   width: 70%;
 
   .section-header {
@@ -14,11 +15,12 @@
   .skills-block {
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 700px;
 
 
     img {
+      margin: 0 10px;
       max-width: 100px;
       max-height: 150px;
       transition: 300ms all ease-in-out;
