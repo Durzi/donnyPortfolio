@@ -1,9 +1,4 @@
-/*Components
-*Examples _buttons, _dropdown, _cover, _navagation, _carousel
-*
-*/
-@import "components/_buttons";
-@import "components/_media";
+/*Components*/
 @import "components/_navagation";
 @import "components/_images";
 @import "components/_headers";
@@ -14,12 +9,10 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/*Layouts
-*Examples _grid, _header, _footer, _sections
-*
-*/
+/*Layouts*/
 @import "layouts/_header";
 @import "layouts/_about";
 @import "layouts/_skills";
@@ -28,18 +21,10 @@ body {
 @import "layouts/_footer";
 
 
-/*Modules
-*Examples _variables, _mixins, _functions
-*
-*/
+/*Modules*/
 @import "modules/_variables";
-@import "modules/_mixins";
-@import "modules/_functions";
 
 
 
-/*Vendors
-*Third party code like jquery-ui or bootstrap
-*
-*/
+/*Vendors*/
 @import "vendors/_normalize";

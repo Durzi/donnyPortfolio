@@ -3,7 +3,7 @@ $(function() {
 
   //Toggle Navigation and animate menu icon
   $(".nav-icon").click(function() {
-    $(".main-nav").toggleClass("open");
+    $("#navigation").toggleClass("open");
     $(".icon-bar:nth-child(1)").toggleClass("close-nav-icon-1");
     $(".icon-bar:nth-child(2)").toggleClass("close-nav-icon-2");
     $(".icon-bar:nth-child(3)").toggleClass("close-nav-icon-3");
@@ -44,12 +44,14 @@ $(function() {
   //Smooth scrolling
   $(".main-nav-ul li a").click(function() {
     var section = $(this).attr("href");
-    var where = $(section).position().top;
+    var where = $(section).offset().top;
 
     $("html, body").animate({
       scrollTop: where
     }, 700);
 
   });
+
+
 
 });//EoB

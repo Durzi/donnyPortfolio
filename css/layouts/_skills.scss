@@ -1,6 +1,8 @@
 #skills {
   margin: 0 auto 200px auto;
   padding-top: 50px;
+  position: relative;
+  top: 300px;
   width: 70%;
 
   .section-header {
@@ -14,20 +16,73 @@
 
   .skills-block {
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    width: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
 
 
     img {
-      margin: 0 10px;
+      margin: 0 5px;
       max-width: 100px;
       max-height: 150px;
+      -webkit-transition: 300ms all ease-in-out;
       transition: 300ms all ease-in-out;
 
       &:hover {
-        animation: wobble 500ms linear;
-        filter: drop-shadow(5px 6px 10px $font-bg);
+        -webkit-animation: wobble 500ms linear;
+                animation: wobble 500ms linear;
+        -webkit-filter: drop-shadow(5px 6px 10px $font-bg);
+                filter: drop-shadow(5px 6px 10px $font-bg);
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #skills {
+    .section-header {
+      font-size: $h2-size + .7;
+    }
+    .skills-block {
+      img {
+        max-width: 90px;
+        max-height: 140px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #skills {
+    .section-header {
+      font-size: $h2-size + .5;
+    }
+    .skills-block {
+      img {
+        max-width: 80px;
+        max-height: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  #skills {
+    width: 100%;
+    .section-header {
+      font-size: $h2-size + .3;
+    }
+    .skills-block {
+      width: 90%;
+      img {
+        max-width: 70px;
+        max-height: 120px;
       }
     }
   }

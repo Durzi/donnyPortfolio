@@ -7,55 +7,41 @@
   right: 0;
   width: 150px;
   height: 100%;
+  z-index: 1000;
 
-  .nav-icon {
-    position: absolute;
-    top: 0;
-    right:0;
-    margin: 25px;
-    padding: 25px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    z-index: 1;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
 
+  transition: -webkit-transform 500ms ease-in-out;
 
-    &:hover {
-      animation: wobble 300ms linear;
-    }
+  transition: transform 500ms ease-in-out;
 
-    &:active {
-      opacity: .5;
-    }
-
-
-    .icon-bar {
-      display: block;
-      content: "";
-      margin-bottom: $quarter-mar;
-      width: 100%;
-      height: 4px;
-      background: $header-color;
-      border-radius: $border-radius;
-      transition: 300ms all ease-in;
-    }
-  }
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
 
   .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 100%;
     height: 100%;
     font-family: $paragraph-font;
     background: $section-bg-color;
     z-index: 2;
-
-    transition: transform 500ms ease-in-out;
-    transform: translateX(200px);
 
     .main-nav-ul {
       padding: 0;
@@ -75,6 +61,7 @@
           font-size: $p-size + .4;
           color: #000;
           border-bottom: $border-size solid transparent;
+          -webkit-transition: border 300ms;
           transition: border 300ms;
 
         }
@@ -83,12 +70,49 @@
   }
 }
 
+.nav-icon {
+  position: fixed;
+  top: 0;
+  right:0;
+  margin: 35px;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  z-index: 1001;
+
+
+  &:hover {
+    -webkit-animation: wobble 300ms linear;
+            animation: wobble 300ms linear;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+
+
+  .icon-bar {
+    display: block;
+    content: "";
+    margin-bottom: $quarter-mar;
+    width: 100%;
+    height: 4px;
+    background: $header-color;
+    border-radius: $border-radius;
+    -webkit-transition: 300ms all ease-in;
+    transition: 300ms all ease-in;
+  }
+}
+
 .open {
-  transform: translateX(0px) !important;
+  -webkit-transform: translateX(0px) !important;
+          transform: translateX(0px) !important;
 }
 
 .close-nav-icon-1 {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .close-nav-icon-2 {
@@ -97,5 +121,6 @@
 
 .close-nav-icon-3 {
   margin-top: -1em;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }

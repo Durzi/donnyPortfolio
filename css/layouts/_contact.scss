@@ -1,6 +1,9 @@
 #contact {
   margin: 0 auto 400px auto;
+  padding-top: 50px;
   width: 70%;
+  position: relative;
+  top: 300px;
 
   .section-header {
     margin-bottom: 45px;
@@ -11,33 +14,50 @@
   .contact-nav-social{
     margin: auto;
     width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 
     .social-circle {
       margin: 0 5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 150px;
       height: 150px;
       border-radius: 50%;
+      -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
 
 
       &:hover {
-        transform: scale(.9) translateY(-15px);
+        -webkit-transform: scale(.9) translateY(-15px);
+                transform: scale(.9) translateY(-15px);
       }
 
       &:hover i {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
       }
 
       a {
         color: inherit;
 
         &:hover {
-          animation: wobble 300ms;
+          -webkit-animation: wobble 300ms;
+                  animation: wobble 300ms;
         }
       }
 
@@ -78,12 +98,68 @@
       font-weight: bold;
       unicode-bidi: bidi-override;
       direction: rtl;
+      -webkit-transition: 300ms all ease-in-out;
       transition: 300ms all ease-in-out;
 
       &:hover {
         text-shadow: 3px 4px 6px #dcdcdc;
-        transform: scale(.95);
+        -webkit-animation: letter-spacing 300ms;
+                animation: letter-spacing 300ms;
       }
+    }
+  }
+}
+
+
+@media (max-width: 1500px) {
+  #contact {
+    .section-header {
+      #hide-email {
+        font-size: $h1-size * 2.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  #contact {
+    .section-header {
+      #hide-email {
+        font-size: $h1-size * 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #contact {
+    width: 100%;
+    .section-header {
+      #hide-email {
+        font-size: $h1-size * 1.5;
+      }
+    }
+    .contact-nav-social {
+      width: 100%;
+      .social-circle {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  #contact {
+    .section-header {
+      #hide-email {
+        font-size: $h1-size;
+      }
+    }
+    .contact-nav-social {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
     }
   }
 }

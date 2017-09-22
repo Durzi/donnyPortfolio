@@ -1,10 +1,7 @@
 @import "../modules/_variables";
 
 #intro {
-  margin: 120px 0 0 0;
-  height: 100vh;
-  box-sizing: border-box;
-
+  padding-top: 50px;
 
   #page-indicator {
     position: fixed;
@@ -26,29 +23,14 @@
       font-size: $h1-size - .2;
       font-family: $paragraph-font;
       line-height: 65px;
+      -webkit-transition: 200ms top ease-in-out;
       transition: 200ms top ease-in-out;
-    }
-
-    &:after {
-      content: "";
-      display: block;
-      width: 10px;
-      height: 75px;
-      background: $main-color;
-      position: absolute;
-      top: -$border-size;
-      right: -$border-size * 3;
-      border-top-right-radius: $border-radius;
-      border-bottom-right-radius: $border-radius;
     }
   }
 
-  //Center content - Face, Title, Blurb
-  #into-block {
-    position: relative;
+  #intro-block {
     margin: auto;
     width: 700px;
-    max-height: 300px;
     font-size: 1.1em;
 
     .section-header {
@@ -77,7 +59,134 @@
       background: $section-bg-color;
       border: $border-size solid $main-color;
       border-radius: $border-radius;
-      box-shadow: $main-block-shadow;
+      -webkit-box-shadow: $main-block-shadow;
+              box-shadow: $main-block-shadow;
+    }
+  }
+}
+
+
+@media (max-width: 1450px) {
+  #intro {
+
+    #page-indicator{
+      max-width: 180px;
+      h1 {
+        font-size: $h2-size - .3;
+      }
+    }
+
+    #intro-block {
+
+      #profile-picture {
+        max-width: 350px;
+        max-height: 350px;
+
+        img {
+          max-width: 350px;
+          max-height: 350px;
+        }
+      }
+
+      .section-header {
+        top: -450px;
+        left: -80px;
+        font-size: 1.8em;
+
+        &:nth-child(2) {
+          text-align: center;
+        }
+      }
+
+      .blurb {
+        top: -280px;
+        left: 430px;
+        max-width: 350px;
+        font-size: .9em;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1240px) {
+  #intro {
+
+    #page-indicator {
+      width: 150px;
+      h1 {
+        font-size: $h2-size - .5;
+      }
+    }
+    #intro-block {
+      .section-header {
+        left: 0;
+        top: -500px;
+        h1 {
+          padding-left: 5px;
+          display: inline;
+        }
+      }
+      .blurb {
+        top: -100px;
+        left: 155px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 850px) {
+  #intro {
+    #page-indicator {
+      display: none;
+    }
+
+    #intro-block {
+      width: 100%;
+
+      #profile-picture {
+        position: relative;
+        top: 50px;
+      }
+      .section-header {
+        margin: 50px auto;
+        width: 100%;
+        h1 {
+          max-width: 100%;
+          display: block;
+        }
+        h1:first-of-type {
+          text-align: center;
+        }
+      }
+
+      .blurb {
+        margin: -150px auto;
+        position:static;
+        width: 90%;
+      }
+    }
+
+    .nav-icon {
+      margin: 30px;
+    }
+
+    #navigation {
+      width: 100px;
+
+      .main-nav {
+        .main-nav-ul {
+          margin: 0;
+          padding: 0;
+          li {
+            margin: 0;
+            padding: 1em;
+          }
+        }
+      }
+
     }
   }
 }
