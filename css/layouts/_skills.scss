@@ -9,8 +9,19 @@
     margin-bottom: 45px;
     text-align: center;
 
+    .word-bg {
+      display: inline-block;
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+    }
+
     &:nth-child(3) {
       margin-top: 45px;
+
+      .word-bg {
+        -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+      }
     }
   }
 
@@ -31,14 +42,14 @@
       margin: 0 5px;
       max-width: 100px;
       max-height: 150px;
-      -webkit-transition: 300ms all ease-in-out;
-      transition: 300ms all ease-in-out;
+      -webkit-transition: 500ms all ease-in-out;
+      transition: 500ms all ease-in-out;
 
       &:hover {
         -webkit-animation: wobble 500ms linear;
                 animation: wobble 500ms linear;
-        -webkit-filter: drop-shadow(5px 6px 10px $font-bg);
-                filter: drop-shadow(5px 6px 10px $font-bg);
+        -webkit-filter: drop-shadow(0 0 10px $font-bg);
+                filter: drop-shadow(0 0 10px $font-bg);
       }
     }
   }

@@ -18,19 +18,19 @@ $(function() {
     var bProjects = $("#projects").position().top + $("#projects").outerHeight(true) -120;
 
     if (wPos <= bIntro) {
-      $("#page-indicator h1").css("top", 0 + "px");
+      $("#page-indicator #pages").css("top", 0 + "px");
     }
     if (wPos >= bIntro) {
-      $("#page-indicator h1").css("top", -65 + "px");
+      $("#page-indicator #pages").css("top", -65 + "px");
     }
     if (wPos >= bAbout) {
-      $("#page-indicator h1").css("top", -130 + "px");
+      $("#page-indicator #pages").css("top", -130 + "px");
     }
     if (wPos >= bSkills) {
-      $("#page-indicator h1").css("top", -195 + "px");
+      $("#page-indicator #pages").css("top", -195 + "px");
     }
     if (wPos >= bProjects) {
-      $("#page-indicator h1").css("top", -260 + "px");
+      $("#page-indicator #pages").css("top", -260 + "px");
     }
   });
 

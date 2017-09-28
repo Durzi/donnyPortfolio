@@ -52,18 +52,28 @@
         margin: 0 0 $one-mar 50px;
         width: 100%;
 
-        &:hover a {
-          border-bottom: $border-size solid $main-color;
+        &:hover a:before {
+          width: 100%;
         }
 
         a {
+          position: relative;
           text-decoration: none;
           font-size: $p-size + .4;
           color: #000;
           border-bottom: $border-size solid transparent;
           -webkit-transition: border 300ms;
-          transition: border 300ms;
 
+          &:before {
+            position: absolute;
+            top:25px;
+            left:0;
+            content: "";
+            width: 0%;
+            border-bottom: 5px solid $main-color;
+            transform-origin: left center;
+            transition: all 300ms ease-in-out;
+          }
         }
       }
     }
