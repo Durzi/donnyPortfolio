@@ -9,3 +9,19 @@
   color: $main-color;
   background: rgba(0, 0, 0, .3);
 }
+
+@media (max-width: 600px) {
+  #footer {
+    h3 {
+      font-size: $p-size;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #footer {
+    h3 {
+      font-size: $p-size - .3;
+    }
+  }
+}
